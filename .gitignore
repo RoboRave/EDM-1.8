@@ -8,10 +8,10 @@
 .project
 # MC/Forge Directories #
 .settings/
-build/
+/build/
+
 eclipse/
 bin/
-src/main/java/com/
 # MC/Forge files #
 setup.bat
 build.bat
