@@ -70,7 +70,7 @@ Git is used to clone EDM and update your local copy.
 1. Download and install Git [here](http://git-scm.com/download/).
 	* *Optional*: Download and install a Git GUI client, such as Github for Windows/Mac, SmartGitHg, TortoiseGit, etc.  A nice list is available [here](http://git-scm.com/downloads/guis).
 
-####Setup EDM
+####Setup-EDM
 This section assumes that you're using the command-line version of Git.
 
 1. Open up your command line.
@@ -84,7 +84,7 @@ This section assumes that you're using the command-line version of Git.
 		\-EDM's files (should have `build.gradle`)
 ***
 
-####Compile EDM
+####Compile-EDM
 1. Execute `gradle setupCiWorkspace`. This sets up Forge and downloads the necessary libraries to build EDM.  This might take some time, be patient.
 	* You will generally only have to do this once until the Forge version in `build.properties` changes.
 2. Execute `gradle build`. If you did everything right, `BUILD SUCCESSFUL` will be displayed after it finishes.  This should be relatively quick.
