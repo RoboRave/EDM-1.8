@@ -22,7 +22,7 @@ Also make sure you know EXACTLY what you're doing!  It's not any of our faults i
 
 [Setup EDM](#setup-EDM)
 
-[Compile EDM](#compile-EDM)
+[Compile EDM](#compile)
 
 [Updating Your Repository](#updating-your-repository)
 
@@ -84,7 +84,7 @@ This section assumes that you're using the command-line version of Git.
 		\-EDM's files (should have `build.gradle`)
 ***
 
-####Compile-EDM
+####Compile
 1. Execute `gradle setupCiWorkspace`. This sets up Forge and downloads the necessary libraries to build EDM.  This might take some time, be patient.
 	* You will generally only have to do this once until the Forge version in `build.properties` changes.
 2. Execute `gradle build`. If you did everything right, `BUILD SUCCESSFUL` will be displayed after it finishes.  This should be relatively quick.
