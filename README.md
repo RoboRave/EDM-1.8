@@ -6,7 +6,7 @@ This mod adds a variety of diamonds to Minecraft, each with different abilities
 
 [Minecraft Forums page](http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1292424-)
 
-[Compiling EDM](#compiling-equivalent-exchange-3) - For those that want the latest unreleased features.
+[Compiling EDM](#compiling-Extra-Diamonds-Mod) - For those that want the latest unreleased features.
 
 [Contributing](#contributing) - For those that want to help out.
 
