@@ -1,0 +1,16 @@
+[
+{
+  "modid": "Extra_Diamonds_Mod",
+  "name": "extra_diamonds_mod",
+  "description": "",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["roborave"],
+  "credits": "The Forge and FML guys, for making FML and Forge",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

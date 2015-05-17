@@ -1,0 +1,12 @@
+tile.Black_diamond_Block.name=Black Diamond Block
+tile.Blue_diamond_Block.name=Blue Diamond Block
+tile.Gold_diamond_Block.name=Gold Diamond Block
+tile.Gray_diamond_Block.name=Gray Diamond Block
+tile.Green_diamond_Block.name=Green Diamond Block
+tile.Orange_diamond_Block.name=Orange Diamond Block
+tile.Pink_diamond_Block.name=Pink Diamond Block
+tile.Purple_diamond_Block.name=Purple Diamond Block
+tile.White_diamond_Block.name=White Diamond Block
+tile.Yellow_diamond_Block.name=Yellow Diamond Block
+
+

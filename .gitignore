@@ -1,8 +1,19 @@
-.gradle
+*.class
+
+# Package Files #
+
+*.war
+*.ear
+.classpath
+.project
+# MC/Forge Directories #
+.gradle/
+.settings/
 build/
-
-# Ignore Gradle GUI config
-gradle-app.setting
-
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
+eclipse/
+gradle/
+bin/
+src/main/java/com/
+# MC/Forge files #
+setup.bat
+build.bat
