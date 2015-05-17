@@ -4,7 +4,7 @@ This mod adds a variety of diamonds to Minecraft, each with different abilities
 ##Welcome to Extra Diamonds Mod
 **LATEST OFFICIAL VERSION**: [All versions available here](http://minecraft.curseforge.com/mc-mods/59689-extra-diamonds-mod)
 
-[Minecraft Forums page](http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1292424-)
+[Minecraft Forums page](http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1292424-1-7-10-forge-extra-diamond-mod)
 
 [Compiling EDM](#compiling-Extra-Diamonds-Mod) - For those that want the latest unreleased features.
 
@@ -119,7 +119,7 @@ So you found a bug in Roborave's code?  Think you can make it more efficient?  W
 EDM crashes every time?  Have a suggestion?  Found a bug?  Create an issue now!
 
 1. Make sure your issue hasn't already been answered or fixed.  Also think about whether your issue is a valid one before submitting it.
-	* Please do not open an issue to ask a question-that is for [RoboRave's Twitter](https://twitter.com/dowding_zach) or the [forums](http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1292424-).
+	* Please do not open an issue to ask a question-that is for [RoboRave's Twitter](https://twitter.com/dowding_zach) or the [forums](http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1292424-1-7-10-forge-extra-diamond-mod).
 2. Go to [the issues page](https://github.com/RoboRave/EDM-Issue-Tracker/issues).
 3. Click `New Issue` right below `Star` and `Fork`.
 4. Enter your Issue's title (something that summarizes your issue), and then create a detailed description ("Hey roborave, could you add/change xxx?" or "Hey, found an exploit:  stuff").
