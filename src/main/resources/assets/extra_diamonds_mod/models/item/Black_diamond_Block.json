@@ -1,0 +1,22 @@
+{
+    "parent": "extra_diamonds_mod:block/Black_diamond_Block",
+    "display": {
+        "thirdperson": {
+            "rotation": [
+                10,
+                -45,
+                170
+            ],
+            "translation": [
+                0.0,
+                1.5,
+                -2.75
+            ],
+            "scale": [
+                0.375,
+                0.375,
+                0.375
+            ]
+        }
+    }
+}
