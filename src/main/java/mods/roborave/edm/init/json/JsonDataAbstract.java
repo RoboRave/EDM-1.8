@@ -29,9 +29,9 @@ public abstract class JsonDataAbstract implements IJsonData {
 
     public void writeJson(File file, JsonElement jsonElement) {
         try {
-            try (OutputStream os = new FileOutputStream(file)) {
-                IOUtils.write(toJson(jsonElement), os);
-            }
+            //try (OutputStream os = new FileOutputStream(file)) {
+          //      IOUtils.write(toJson(jsonElement), os);
+       //     }
         } catch (Exception e) {
         	EDM.Instance.logger.log(Level.INFO,"Failed to save to config.", e);
         }
