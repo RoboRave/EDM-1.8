@@ -16,7 +16,7 @@ buildscript {
 }
 
 apply plugin: 'forge'
-
+targetCompatibility = JavaVersion.VERSION_1_8
 version = "5.0.0"
 group= "mods.roborave.edm" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "[5.0.0]EDM-Universal-1.8"

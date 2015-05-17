@@ -5,29 +5,43 @@
  R4wk, ZeuX, IngisKahn, bspkrs
  MCP Data version : snapshot_20141130
 ****************************
-:extractMcpData UP-TO-DATE
+:clean
+:downloadClient SKIPPED
+:downloadServer SKIPPED
 :getVersionJson
 :extractUserDev UP-TO-DATE
+:mergeJars SKIPPED
+:applyBinPatches SKIPPED
+:downloadMcpTools SKIPPED
+:extractMcpData UP-TO-DATE
 :genSrgs SKIPPED
+:deobfBinJar SKIPPED
 :extractNatives UP-TO-DATE
 :getAssetsIndex
 :getAssets
 :makeStart
 [ant:javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
 [ant:javac] 1 warning
-:downloadMcpTools SKIPPED
-:downloadClient SKIPPED
-:downloadServer SKIPPED
-:mergeJars SKIPPED
-:deobfuscateJar SKIPPED
-:decompile SKIPPED
-:processSources SKIPPED
-:remapJar SKIPPED
-:extractMinecraftSrc SKIPPED
-:recompMinecraft SKIPPED
-:repackMinecraft SKIPPED
-:setupDecompWorkspace
+:setupDevWorkspace
+:compileApiJava UP-TO-DATE
+:processApiResources UP-TO-DATE
+:apiClasses UP-TO-DATE
+:sourceMainJava
+:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+1 warning
+
+:processResources
+:classes
+:jar
+:compileTestJava UP-TO-DATE
+:processTestResources UP-TO-DATE
+:testClasses UP-TO-DATE
+:test UP-TO-DATE
+:reobf
+:assemble
+:check UP-TO-DATE
+:build
 
 BUILD SUCCESSFUL
 
-Total time: 2 mins 10.263 secs
+Total time: 48.501 secs

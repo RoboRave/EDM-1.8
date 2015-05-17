@@ -1,17 +1,13 @@
-*.class
+
 
 # Package Files #
-
 *.war
 *.ear
 .classpath
 .project
+*.class
 # MC/Forge Directories #
 .settings/
-/build/
 
 eclipse/
 bin/
-# MC/Forge files #
-setup.bat
-build.bat
