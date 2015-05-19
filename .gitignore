@@ -8,6 +8,6 @@
 *.class
 # MC/Forge Directories #
 .settings/
-
+.gradle/
 eclipse/
 bin/
