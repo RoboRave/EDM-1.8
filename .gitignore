@@ -5,6 +5,6 @@
 .project
 # MC/Forge Directories #
 .settings/
-/.gradle/
+.gradle/
 eclipse/
 bin/
