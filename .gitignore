@@ -1,4 +1,5 @@
 *.jar
+*.class
 
 # Package Files #
 .classpath
@@ -9,3 +10,4 @@
 eclipse/
 bin/
 build/
+libs/
