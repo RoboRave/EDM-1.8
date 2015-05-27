@@ -6,7 +6,6 @@ import mods.roborave.edm.EDM;
 import mods.roborave.edm.blocks.BlockCompressed;
 import mods.roborave.edm.blocks.BlockOre;
 import mods.roborave.edm.client.model.ModelHelper;
-import mods.roborave.edm.init.json.JsonCreator;
 import mods.roborave.edm.lib.Strings;
 import net.minecraft.block.Block;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -86,15 +85,7 @@ public class Blocks
 	
 		YD =new BlockCompressed("Yellow_diamond_Block").setCreativeTab(EDM.tabEDMBlock);
 		registerBlock(YD,"Yellow_diamond_Block");
-	
-		/** repeat*/
-		/*
-		 * 
-		 * 
-		 * 
-		 * 
-		 * 
-		 */
+		
 		BDO = (BlockOre) new BlockOre("Black").setCreativeTab(EDM.tabEDMBlock);
 		registerBlockOre(BDO,"Black_diamond_Ore");
 	
@@ -145,10 +136,8 @@ public class Blocks
 	        GameRegistry.registerBlock(block, string);
 	        ModelHelper.registerBlock(block, Strings.MODID+":" + string);
 	}
-	
 	public static void registerBlockOre(BlockOre block, String string)
 	{
-			JsonCreator.generateJsonBlock(string);
 	        GameRegistry.registerBlock(block, string);
 	        ModelHelper.registerBlock(block, Strings.MODID+":" + string);
 	}

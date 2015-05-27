@@ -13,7 +13,6 @@ import net.minecraftforge.fml.common.FMLCommonHandler;
 
 public class ClientProxy extends CommonProxy implements IProxy
 {
-
 	public static Item.ToolMaterial Black = EnumHelper.addToolMaterial("Black_D", 3, 1200, 6.0F,  3.0F, 8);
     public static Item.ToolMaterial Blue  = EnumHelper.addToolMaterial("Blue_D",  3, 1400, 8.0F,  5.0F, 10);
     public static Item.ToolMaterial Gray  = EnumHelper.addToolMaterial("Gray_D",  3, 1600, 10.0F, 7.0F, 12);
@@ -40,7 +39,6 @@ public class ClientProxy extends CommonProxy implements IProxy
 	public void PreInit()
 	{
 		super.PreInit();
-	
 	}
 	
 	@Override
@@ -65,6 +63,4 @@ public class ClientProxy extends CommonProxy implements IProxy
     {
         FMLClientHandler.instance().getClient().ingameGUI.getChatGUI().printChatMessage(new ChatComponentText(announcement));
     }
-
-	
 }

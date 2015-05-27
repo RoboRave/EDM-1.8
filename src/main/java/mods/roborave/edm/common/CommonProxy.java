@@ -15,7 +15,11 @@ public class CommonProxy implements IProxy
 
 	@Override
 	public void PreInit() 
-	{}
+	{
+		//WIP doesn't work
+		//TODO make work
+		//AbilityHandler.init();
+	}
 	
 	@Override
 	public void Init() 
@@ -26,12 +30,9 @@ public class CommonProxy implements IProxy
 		Armor.init();
 		Recipes.init();
 		
-		try {
+		try{
 			Tweaker.load();
-		} 
-			catch (Exception e) 
-		{
-			
+		}catch (Exception e){
 			e.printStackTrace();
 		}
 	}

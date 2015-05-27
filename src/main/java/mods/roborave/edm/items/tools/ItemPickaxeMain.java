@@ -11,7 +11,6 @@ public class ItemPickaxeMain extends ItemPickaxe {
 		super(p_i45347_1_);
 		this.setUnlocalizedName(par1Str);
 		this.Name=par1Str;
-		//this.setTextureName(Strings.MODID()+":"+par1Str);
 	}
 
 	public String getName()

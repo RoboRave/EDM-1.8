@@ -122,27 +122,15 @@ public class Armor
         YDP= (ItemLegs) new ItemLegs(ClientProxy.Yellow_Diamonds,3,"Yellow").setUnlocalizedName("Yellow_Diamond_Pants").setCreativeTab(EDM.tabEDMArmor);
         YDB= (ItemBoots) new ItemBoots(ClientProxy.Yellow_Diamonds,4,"Yellow").setUnlocalizedName("Yellow_Diamond_Boots").setCreativeTab(EDM.tabEDMArmor);
         
-        
-        
-        
         registerArmorSet(BDH,BDC,BDP,BDB);
-		
         registerArmorSet(BLDH,BLDC,BLDP,BLDB);
-
         registerArmorSet(GDH,GDC,GDP,GDB);
-		
         registerArmorSet(GRDH,GRDC,GRDP,GRDB);
-
         registerArmorSet(ODH,ODC,ODP,ODB);
-        
         registerArmorSet(PDH,PDC,PDP,PDB);
-        
         registerArmorSet(PUDH,PUDC,PUDP,PUDB);
-        
 		registerArmorSet(RDH,RDC,RDP,RDB);
-		
 		registerArmorSet(WDH,WDC,WDP,WDB);
-		
 		registerArmorSet(YDH,YDC,YDP,YDB);
 		
 	}
@@ -157,9 +145,8 @@ public class Armor
         ModelHelper.registerItem(chest,Strings.MODID+":"+ chest.getArmorColor());
         ModelHelper.registerItem(legs,Strings.MODID+":"+ legs.getArmorColor());
         ModelHelper.registerItem(boots,Strings.MODID+":"+ boots.getArmorColor());
-        
-        
     }
+	
 	public static void registerItem(Item item)
 	{
 		GameRegistry.registerItem(item, item.getUnlocalizedName(), Strings.MODID());

@@ -30,7 +30,6 @@ public class EDM
 	@SidedProxy(clientSide=Reference.PROXY_CLIENT,serverSide=Reference.PROXY_COMMON)
 	
 	public static CommonProxy proxy;
-	
 	/**
 	 * Minecraft's actual version
 	 */
@@ -70,18 +69,14 @@ public class EDM
 	@Mod.Metadata(Strings.MODID)
 	public ModMetadata meta;
 
-	
 	@Mod.Instance(Strings.MODID)
 	public static EDM Instance;
-
-	public static int ticker;
 	
+	public static int ticker;
 	public static String category_version=Strings.CONFIG_CATEGORY_VERCHECK;
 
 	public static boolean hardMode;
-	
 	public static boolean test=true;
-	
 	public static String descriptionDEV="turn this on for hard mode which will make the swords unenchanted. WIP";
 	
 	private static void syncConfig() 
@@ -102,21 +97,16 @@ public class EDM
 		meta.version=Strings.version;
 		
 		VersionChecker.registerMod(meta);
-		
 		EDM.setVersionConfig(new Config(event.getSuggestedConfigurationFile())); 
 		syncConfig();
 		proxy.PreInit();
 	}
-
-		
-	
 	
 	@SubscribeEvent
     public void onConfigChanged(ConfigChangedEvent.OnConfigChangedEvent eventArgs) {
         if(eventArgs.modID.equals("Extra_Diamonds_Mod"));
            syncConfig();
     }
-	
 
 	@EventHandler
 	public void Init(FMLInitializationEvent event)
@@ -128,13 +118,13 @@ public class EDM
 
 		proxy.registerTickers();
 		proxy.Init();
-		
-	
 	}
 	
 	@EventHandler
 	public void PostInit(FMLPostInitializationEvent event)
-	{}
+	{
+		
+	}
 
 	public LogHandler getLogger() 
 	{

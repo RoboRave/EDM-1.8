@@ -1,21 +1,20 @@
 package mods.roborave.edm.init.json;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.StringWriter;
+import java.io.Writer;
+
+import mods.roborave.edm.EDM;
+
+import org.apache.logging.log4j.Level;
+
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonPrimitive;
 import com.google.gson.internal.Streams;
 import com.google.gson.stream.JsonWriter;
-
-import mods.roborave.edm.EDM;
-
-
-//import me.jezza.App;
-//import me.jezza.common.core.interfaces.IJsonData;
-import org.apache.commons.io.IOUtils;
-import org.apache.logging.log4j.Level;
-
-import java.io.*;
 
 public abstract class JsonDataAbstract implements IJsonData {
 

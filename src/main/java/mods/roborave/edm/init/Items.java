@@ -1,8 +1,5 @@
 package mods.roborave.edm.init;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-
 import mods.roborave.edm.EDM;
 import mods.roborave.edm.client.ClientProxy;
 import mods.roborave.edm.client.model.ModelHelper;
@@ -14,17 +11,12 @@ import mods.roborave.edm.items.tools.ItemSwordMain;
 import mods.roborave.edm.lib.Strings;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.util.RegistryNamespaced;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class Items 
 {
-	
 	private static boolean isInitialized = false;
-	
-	public static HashMap<String , Item> itemList = new HashMap<String , Item>(); 
 
-	
 	public static ItemPickaxeMain BDPX;
 	public static ItemAxeMain BDAX;
 	public static ItemSpadeMain BDSD;
@@ -76,28 +68,15 @@ public class Items
 	public static ItemSwordMain YDSW;
 	
 	public static Item BD;
-	
 	public static Item BLD;
-	
 	public static Item GD;
-	
 	public static Item GRD;
-	
 	public static Item OD;
-	
 	public static Item PD;
-	
 	public static Item PUD;
-	
 	public static Item RD;
-	
 	public static Item WD;
-	
 	public static Item YD;
-	
-	public static ArrayList<Item> set;
-
-	public static final RegistryNamespaced itemRegistry = net.minecraftforge.fml.common.registry.GameData.getItemRegistry();
 	
 	public static void init() 
 	{
@@ -107,40 +86,28 @@ public class Items
 		}
 		else
 		{
-			//Diamonds
 			EDM.Instance.getLogger().info("Initializing Items");
 			
-			BD =new ItemCore("Item_Black_diamond").setCreativeTab(CreativeTabs.tabBlock);
-			registerItem(BD,"Item_Black_diamond");
+			BD =new ItemCore("Item_Black_diamond"); registerItem(BD,"Item_Black_diamond");
 			
-			BLD =new ItemCore("Item_Blue_diamond").setCreativeTab(CreativeTabs.tabBlock);
-			registerItem(BLD,"Item_Blue_diamond");
+			BLD =new ItemCore("Item_Blue_diamond"); registerItem(BLD,"Item_Blue_diamond");
 			
-			GD =new ItemCore("Item_Gray_diamond").setCreativeTab(CreativeTabs.tabBlock);
-			registerItem(GD,"Item_Gray_diamond");
+			GD =new ItemCore("Item_Gray_diamond"); registerItem(GD,"Item_Gray_diamond");
 			
-			GRD =new ItemCore("Item_Green_diamond").setCreativeTab(CreativeTabs.tabBlock);
-			registerItem(GRD,"Item_Green_diamond");
+			GRD =new ItemCore("Item_Green_diamond"); registerItem(GRD,"Item_Green_diamond");
 			
-			OD =new ItemCore("Item_Orange_diamond").setCreativeTab(CreativeTabs.tabBlock);
-			registerItem(OD,"Item_Orange_diamond");
+			OD =new ItemCore("Item_Orange_diamond"); registerItem(OD,"Item_Orange_diamond");
 			
-			PD =new ItemCore("Item_Pink_diamond").setCreativeTab(CreativeTabs.tabBlock);
-			registerItem(PD,"Item_Pink_diamond");
+			PD =new ItemCore("Item_Pink_diamond"); registerItem(PD,"Item_Pink_diamond");
 			
-			PUD =new ItemCore("Item_Purple_diamond").setCreativeTab(CreativeTabs.tabBlock);
-			registerItem(PUD,"Item_Purple_diamond");
+			PUD =new ItemCore("Item_Purple_diamond"); registerItem(PUD,"Item_Purple_diamond");
 			
-			RD =new ItemCore("Item_Red_diamond").setCreativeTab(CreativeTabs.tabBlock);
-			registerItem(RD,"Item_Red_diamond");
+			RD =new ItemCore("Item_Red_diamond"); registerItem(RD,"Item_Red_diamond");
 			
-			WD =new ItemCore("Item_White_diamond").setCreativeTab(CreativeTabs.tabBlock);
-			registerItem(WD,"Item_White_diamond");
+			WD =new ItemCore("Item_White_diamond"); registerItem(WD,"Item_White_diamond");
 			
-			YD =new ItemCore("Item_Yellow_diamond").setCreativeTab(CreativeTabs.tabBlock);
-			registerItem(YD,"Item_Yellow_diamond");
+			YD =new ItemCore("Item_Yellow_diamond"); registerItem(YD,"Item_Yellow_diamond");
 		
-			
 			//Tools
 			EDM.Instance.getLogger().info("Initializing Tools");
 			
@@ -205,29 +172,18 @@ public class Items
 	        YDSW = (ItemSwordMain) new ItemSwordMain(ClientProxy.White,"Yellow_Diamond_Sword").setCreativeTab(CreativeTabs.tabCombat);
 	        
 	        registerToolSet(BDPX, BDAX, BDSD, BDSW);
-
 	        registerToolSet(BLDPX, BLDAX, BLDSD, BLDSW);
-	        
 	        registerToolSet(GDPX, GDAX, GDSD, GDSW);
-	        
 	        registerToolSet(GRDPX, GRDAX, GRDSD, GRDSW);
-	        
 	        registerToolSet(ODPX, ODAX, ODSD, ODSW);
-	        
 	        registerToolSet(PDPX, PDAX, PDSD, PDSW);
-	        
 	        registerToolSet(PUDPX, PUDAX, PUDSD, PUDSW);
-	        
 	        registerToolSet(RDPX, RDAX, RDSD, RDSW);
-	        
 	        registerToolSet(WDPX, WDAX, WDSD, WDSW);
-	       
 	        registerToolSet(YDPX, YDAX, YDSD, YDSW);
 	        
 			isInitialized = true;
-
 			}
-		    
 	}
 	public static void registerToolSet(ItemPickaxeMain pick, ItemAxeMain axe, ItemSpadeMain spade, ItemSwordMain sword)
     {
@@ -242,17 +198,6 @@ public class Items
         
         
     }
-	
-	public static Item get(Item item) 
-	{
-		return itemList.get(item);
-	}
-	
-	public static void registerItem2(Item item) 
-	{
-		GameRegistry.registerItem(item, item.getUnlocalizedName(), Strings.MODID);
-	}
-	
     public static void registerItem(Item item, String string)
     {
         GameRegistry.registerItem(item, string);

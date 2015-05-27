@@ -10,7 +10,6 @@ public class ItemSpadeMain extends ItemSpade{
 		super(p_i45353_1_);
 		this.Name=par1Str;
 		this.setUnlocalizedName(par1Str);
-	//	this.setTextureName(Strings.MODID()+":"+par1Str);
 	}
 
 	public String getName()

@@ -10,7 +10,7 @@ public class Strings {
 	public static final String MODID(){	return Reference.MODID;	}
 	
 	public static final  String name = "extra_diamonds_mod";
-	public static final String version = "5.0.0";
+	public static final String version = "5.0.2";
 	
 	public static final String CONFIG_CATEGORY_VERCHECK = "versioncheck";
 
