@@ -1,5 +1,6 @@
 package mods.roborave.edm.init;
 
+import net.minecraft.entity.player.EntityPlayer;
 import mods.roborave.edm.common.Ability;
 /**
  * 
@@ -9,11 +10,16 @@ import mods.roborave.edm.common.Ability;
  */
 public class AbilityHandler {
 
-	public static Ability BlueDiamond;
+	public static Ability Fly;
+	public static EntityPlayer player;
+	public static void fly()
+	{
+		 player.capabilities.allowFlying = true;
+	}
 	public static void init() 
 	{
-		BlueDiamond= new Ability("Black_diamond", Items.BD);
-		Ability.addAbility(Items.BD, BlueDiamond).getAbilityName();
+		
+		Fly= new Ability("Fly",fly());
 	}
-
+	
 }

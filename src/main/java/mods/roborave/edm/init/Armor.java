@@ -4,17 +4,21 @@ import java.util.HashMap;
 
 import mods.roborave.edm.EDM;
 import mods.roborave.edm.client.ClientProxy;
+import mods.roborave.edm.client.model.ItemRenderRegister;
 import mods.roborave.edm.client.model.ModelHelper;
 import mods.roborave.edm.items.armor.ItemBoots;
 import mods.roborave.edm.items.armor.ItemChest;
 import mods.roborave.edm.items.armor.ItemHelmat;
 import mods.roborave.edm.items.armor.ItemLegs;
+import mods.roborave.edm.items.armor.ItemModArmor;
 import mods.roborave.edm.lib.Strings;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-
+import net.minecraftforge.common.util.EnumHelper;
 public class Armor 
 {
+	public static ArmorMaterial TUTORIALA = EnumHelper.addArmorMaterial("TUTORIALA", Strings.name+Strings.name, 16, new int[]{3, 8, 6, 3}, 30);
 	
 	public static HashMap<String , Item> itemList = new HashMap<String , Item>(); 
 	public static ItemHelmat BDH;
@@ -67,6 +71,10 @@ public class Armor
 	public static ItemLegs YDP;
 	public static ItemBoots YDB;
 	
+	public static Item tutorialHelmet;
+	public static Item tutorialChestplate;
+	public static Item tutorialLeggings;
+	public static Item tutorialBoots;
 	public static void init()
 	{
 		
@@ -122,7 +130,12 @@ public class Armor
         YDP= (ItemLegs) new ItemLegs(ClientProxy.Yellow_Diamonds,3,"Yellow").setUnlocalizedName("Yellow_Diamond_Pants").setCreativeTab(EDM.tabEDMArmor);
         YDB= (ItemBoots) new ItemBoots(ClientProxy.Yellow_Diamonds,4,"Yellow").setUnlocalizedName("Yellow_Diamond_Boots").setCreativeTab(EDM.tabEDMArmor);
         
-        registerArmorSet(BDH,BDC,BDP,BDB);
+        GameRegistry.registerItem(tutorialHelmet = new ItemModArmor("tutorial_helmet", TUTORIALA, 1, 0), "tutorial_helmet");
+		GameRegistry.registerItem(tutorialChestplate = new ItemModArmor("tutorial_chestplate", TUTORIALA, 1, 1), "tutorial_chestplate");
+		GameRegistry.registerItem(tutorialLeggings = new ItemModArmor("tutorial_leggings", TUTORIALA, 2, 2), "tutorial_leggings");
+		GameRegistry.registerItem(tutorialBoots = new ItemModArmor("tutorial_boots", TUTORIALA, 1, 3), "tutorial_boots");
+        
+		registerArmorSet(BDH,BDC,BDP,BDB);
         registerArmorSet(BLDH,BLDC,BLDP,BLDB);
         registerArmorSet(GDH,GDC,GDP,GDB);
         registerArmorSet(GRDH,GRDC,GRDP,GRDB);
@@ -132,7 +145,7 @@ public class Armor
 		registerArmorSet(RDH,RDC,RDP,RDB);
 		registerArmorSet(WDH,WDC,WDP,WDB);
 		registerArmorSet(YDH,YDC,YDP,YDB);
-		
+		ItemRenderRegister.registerItemRenderer();
 	}
 	
 	public static void registerArmorSet(ItemHelmat helm, ItemChest chest, ItemLegs legs, ItemBoots boots)

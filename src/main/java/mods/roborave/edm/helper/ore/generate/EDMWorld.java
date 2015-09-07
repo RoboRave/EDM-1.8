@@ -13,6 +13,7 @@ public class EDMWorld {
 	{
 		try{
 		//	registerWorldGen(new RetroGenerationManager(), 1);
+			registerWorldGen(new CurrentGenerator(),1);
 		}
 			catch(Exception e)
 		{

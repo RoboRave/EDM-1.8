@@ -5,6 +5,7 @@ import mods.roborave.edm.common.CommonProxy;
 import mods.roborave.edm.config.Config;
 import mods.roborave.edm.helper.LogHandler;
 import mods.roborave.edm.helper.VersionChecker;
+import mods.roborave.edm.init.AbilityHandler;
 import mods.roborave.edm.init.Armor;
 import mods.roborave.edm.init.Blocks;
 import mods.roborave.edm.init.Items;
@@ -118,6 +119,7 @@ public class EDM
 
 		proxy.registerTickers();
 		proxy.Init();
+		AbilityHandler.init();
 	}
 	
 	@EventHandler

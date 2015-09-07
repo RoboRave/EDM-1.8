@@ -17,18 +17,5 @@ public class BlockCompressed extends BlockCore
         this.Blockname=name;
     }
 
-    public void createJsonBlockStates() {
-        JsonObject root = new JsonObject();
-
-        JsonObject variants = new JsonObject();
-
-        JsonObject normal = new JsonObject();
-
-        normal.addProperty("model", Strings.name + ":" + Blockname);
-
-        variants.add("normal", normal);
-
-        root.add("variants", variants);
-    }
    
 }

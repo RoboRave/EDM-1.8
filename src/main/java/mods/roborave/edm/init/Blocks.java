@@ -6,6 +6,7 @@ import mods.roborave.edm.EDM;
 import mods.roborave.edm.blocks.BlockCompressed;
 import mods.roborave.edm.blocks.BlockOre;
 import mods.roborave.edm.client.model.ModelHelper;
+import mods.roborave.edm.init.json.JsonCreator;
 import mods.roborave.edm.lib.Strings;
 import net.minecraft.block.Block;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -140,5 +141,6 @@ public class Blocks
 	{
 	        GameRegistry.registerBlock(block, string);
 	        ModelHelper.registerBlock(block, Strings.MODID+":" + string);
+	        
 	}
 }

@@ -1,0 +1,9 @@
+<en_US.lang - English localization file for the mod "Tutorial">
+
+item.tutorial_pickaxe.name=Tutorial Pickaxe
+item.tutorial_axe.name=Tutorial Axe
+item.tutorial_spade.name=Tutorial Spade
+item.tutorial_hoe.name=Tutorial Hoe
+item.tutorial_sword.name=Tutorial Sword
+
+item.tutorial_multitool.name=Tutorial Multitool

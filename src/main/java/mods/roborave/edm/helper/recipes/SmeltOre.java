@@ -19,5 +19,6 @@ public class SmeltOre
 		GameRegistry.addSmelting(Blocks.getBlock("Purple_diamond_Ore"), new ItemStack(Items.PUD), 5);
 		GameRegistry.addSmelting(Blocks.getBlock("White_diamond_Ore"), new ItemStack(Items.WD), 5);
 		GameRegistry.addSmelting(Blocks.getBlock("Yellow_diamond_Ore"), new ItemStack(Items.YD), 5);
+		GameRegistry.addSmelting(Blocks.getBlock("Red_diamond_Ore"), new ItemStack(Items.RD), 5);
 	}
 }

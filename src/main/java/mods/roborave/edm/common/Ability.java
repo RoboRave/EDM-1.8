@@ -3,6 +3,7 @@ package mods.roborave.edm.common;
 import java.util.HashMap;
 import java.util.Map;
 
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 /*
@@ -11,32 +12,19 @@ import net.minecraft.item.ItemArmor;
 public class Ability {
 	
 	private static String name;
-	private static Item ItemStack;
+	private static Object ability;
 	private static ItemArmor armor;
 
 	public static HashMap<String,Ability> AbilityList = new HashMap<String, Ability>();
 
-	public Ability(String par1String, Item par2ItemStack)
+	public Ability(String par1String, Object player)
 	{
 		Ability.name=par1String;
-		ItemStack=par2ItemStack;
-	}
-	
-	public static Ability addAbility(Item ItemStack,Ability ability)
-	{
-		return
-		AbilityList.put(ability.getAbilityName(), ability);
+		ability=player;
 	}
 
-	public String getAbilityName() 
+	public Object getAbility() 
 	{
-		Ability.ItemStack.getUnlocalizedName();
-		return Ability.name;
+		return Ability.ability;
 	}
-	@SuppressWarnings("deprecation")
-	public void putabilitytoList(Map<? extends String, ? extends Ability> m){
-		 armor.getItemAttributeModifiers();
-		 AbilityList.putAll(m);
-	}
-
 }
