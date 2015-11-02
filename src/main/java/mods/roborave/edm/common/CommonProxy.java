@@ -1,5 +1,6 @@
 package mods.roborave.edm.common;
 
+import mods.roborave.edm.helper.ore.generate.EDMWorld;
 import mods.roborave.edm.init.Armor;
 import mods.roborave.edm.init.Blocks;
 import mods.roborave.edm.init.Items;
@@ -24,7 +25,7 @@ public class CommonProxy implements IProxy
 	@Override
 	public void Init() 
 	{
-		//EDMWorld.init();
+		
 		Blocks.init();
 		Items.init();
 		Armor.init();
@@ -35,6 +36,7 @@ public class CommonProxy implements IProxy
 		}catch (Exception e){
 			e.printStackTrace();
 		}
+		EDMWorld.init();
 	}
 
 	public World getClientWorld() 

@@ -19,7 +19,7 @@ public class AbilityHandler {
 	public static void init() 
 	{
 		
-		Fly= new Ability("Fly",fly());
+		Fly= new Ability("Fly",Fly);
 	}
 	
 }

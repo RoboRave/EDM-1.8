@@ -9,6 +9,7 @@ import mods.roborave.edm.init.AbilityHandler;
 import mods.roborave.edm.init.Armor;
 import mods.roborave.edm.init.Blocks;
 import mods.roborave.edm.init.Items;
+import mods.roborave.edm.init.json.JsonCreatorAbility;
 import mods.roborave.edm.lib.Reference;
 import mods.roborave.edm.lib.Strings;
 import net.minecraft.creativetab.CreativeTabs;
@@ -98,6 +99,7 @@ public class EDM
 		meta.version=Strings.version;
 		
 		VersionChecker.registerMod(meta);
+		JsonCreatorAbility.genDefaults();
 		EDM.setVersionConfig(new Config(event.getSuggestedConfigurationFile())); 
 		syncConfig();
 		proxy.PreInit();
@@ -119,7 +121,7 @@ public class EDM
 
 		proxy.registerTickers();
 		proxy.Init();
-		AbilityHandler.init();
+		//AbilityHandler.init();
 	}
 	
 	@EventHandler

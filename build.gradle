@@ -10,7 +10,7 @@ buildscript {
 plugins {
   id 'com.matthewprenger.cursegradle' version "1.0.1"
 }
-
+apply plugin: 'curseforge'
 apply plugin: 'forge'
 
 targetCompatibility = JavaVersion.VERSION_1_8
@@ -30,15 +30,14 @@ minecraft {
     // simply re-run your setup task after changing the mappings to update your workspace.
     mappings = "snapshot_20141130"
 }
-curseforge {
-  apiKey = '72b8071d-0dc8-4571-a662-52d227a3fd67'
-  project {
-    id = '59689'
-    changelog = '+updated to 1.8 but is beta' // A file can also be set using: changelog = file('changelog.txt')
-    releaseType = 'beta'
+curse {
+	apiKey = '72b8071d-0dc8-4571-a662-52d227a3fd67'
+    projectId = '59689'
+    changelog = '+added worldgen'
+	// A file can also be set using: changelog = file('changelog.txt')
+    releaseType = "release"
 	addGameVersion '1.8'
-	mainArtifact jar
-  }
+  
 }
 dependencies {
     // you may put jars on which you depend on in ./libs

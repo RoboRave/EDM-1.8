@@ -26,33 +26,18 @@ public class CurrentGenerator implements IWorldGenerator {
 	private WorldGenerator White_diamond;
 	private WorldGenerator Yellow_diamond;
 
-
-/*
- * addOre(mods.roborave.edm.init.Blocks.getBlock("Black_diamond_Ore"), Blocks.stone, random, world, chunkX, chunkZ, 15, 64, 5, 7, 20);
-		addOre(mods.roborave.edm.init.Blocks.getBlock("Blue_diamond_Ore"), Blocks.stone, random, world, chunkX, chunkZ, 15, 60, 5, 7, 18);
-		addOre(mods.roborave.edm.init.Blocks.getBlock("Gray_diamond_Ore"), Blocks.stone, random, world, chunkX, chunkZ, 15, 56, 5, 7, 16);
-		addOre(mods.roborave.edm.init.Blocks.getBlock("Green_diamond_Ore"), Blocks.stone, random, world, chunkX, chunkZ, 15, 54, 5, 7,14);
-		addOre(mods.roborave.edm.init.Blocks.getBlock("Orange_diamond_Ore"), Blocks.stone, random, world, chunkX, chunkZ, 15, 52, 5, 7,12);
-		addOre(mods.roborave.edm.init.Blocks.getBlock("Pink_diamond_Ore"), Blocks.stone, random, world, chunkX, chunkZ, 15, 50, 5, 7, 10);
-		addOre(mods.roborave.edm.init.Blocks.getBlock("Purple_diamond_Ore"), Blocks.stone, random, world, chunkX, chunkZ, 15, 48, 5, 7,8);
-		addOre(mods.roborave.edm.init.Blocks.getBlock("Red_diamond_Ore"), Blocks.stone, random, world, chunkX, chunkZ, 15, 46, 5, 7,6);
-		addOre(mods.roborave.edm.init.Blocks.getBlock("White_diamond_Ore"), Blocks.stone, random, world, chunkX, chunkZ, 15, 44, 5, 7,4);
-		addOre(mods.roborave.edm.init.Blocks.getBlock("Yellow_diamond_Ore"), Blocks.stone, random, world, chunkX, chunkZ, 15, 42, 5, 7,2);
- */
-	//@formatter:on
-
 	public CurrentGenerator() {
 
-		this.Black_diamond = new WorldGenMinable(mods.roborave.edm.init.Blocks.BD.getDefaultState(),20);
-		this.Blue_diamond = new WorldGenMinable(mods.roborave.edm.init.Blocks.BLD.getDefaultState(),18);
-		this.Gray_diamond = new WorldGenMinable(mods.roborave.edm.init.Blocks.GD.getDefaultState(),16);
-		this.Green_diamond = new WorldGenMinable(mods.roborave.edm.init.Blocks.GRD.getDefaultState(),14);
-		this.Orange_diamond = new WorldGenMinable(mods.roborave.edm.init.Blocks.OD.getDefaultState(),12);
-		this.Pink_diamond = new WorldGenMinable(mods.roborave.edm.init.Blocks.PD.getDefaultState(),10);
-		this.Purple_diamond = new WorldGenMinable(mods.roborave.edm.init.Blocks.PUD.getDefaultState(),8);
-		this.Red_diamond = new WorldGenMinable(mods.roborave.edm.init.Blocks.RD.getDefaultState(),6);
-		this.White_diamond = new WorldGenMinable(mods.roborave.edm.init.Blocks.WD.getDefaultState(),4);
-		this.Yellow_diamond = new WorldGenMinable(mods.roborave.edm.init.Blocks.YD.getDefaultState(),2);
+		this.Black_diamond = new WorldGenMinable(mods.roborave.edm.init.Blocks.BLDO.getDefaultState(),5);
+		this.Blue_diamond = new WorldGenMinable(mods.roborave.edm.init.Blocks.BLDO.getDefaultState(),5);
+		this.Gray_diamond = new WorldGenMinable(mods.roborave.edm.init.Blocks.GDO.getDefaultState(),5);
+		this.Green_diamond = new WorldGenMinable(mods.roborave.edm.init.Blocks.GRDO.getDefaultState(),5);
+		this.Orange_diamond = new WorldGenMinable(mods.roborave.edm.init.Blocks.ODO.getDefaultState(),4);
+		this.Pink_diamond = new WorldGenMinable(mods.roborave.edm.init.Blocks.PDO.getDefaultState(),4);
+		this.Purple_diamond = new WorldGenMinable(mods.roborave.edm.init.Blocks.PUDO.getDefaultState(),4);
+		this.Red_diamond = new WorldGenMinable(mods.roborave.edm.init.Blocks.RDO.getDefaultState(),2);
+		this.White_diamond = new WorldGenMinable(mods.roborave.edm.init.Blocks.WDO.getDefaultState(),2);
+		this.Yellow_diamond = new WorldGenMinable(mods.roborave.edm.init.Blocks.YDO.getDefaultState(),2);
 
 	}
 
@@ -60,14 +45,25 @@ public class CurrentGenerator implements IWorldGenerator {
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
 		switch (world.provider.getDimensionId()) {
 		case 0: // Overworld
-			this.runGenerator(this.gen_tutorial_ore, world, random, chunkX, chunkZ, 20, 0, 64);
-			this.runGenerator(this.gen_multi_ore, world, random, chunkX, chunkZ, 10, 0, 16);
+			this.runGenerator(this.Black_diamond, world, random, chunkX, chunkZ, 20, 15, 64);
+			this.runGenerator(this.Blue_diamond, world, random, chunkX, chunkZ, 18, 15, 60);
+			this.runGenerator(this.Gray_diamond, world, random, chunkX, chunkZ, 16, 15, 56);
+			this.runGenerator(this.Green_diamond, world, random, chunkX, chunkZ, 14, 15, 54);
+			this.runGenerator(this.Orange_diamond, world, random, chunkX, chunkZ, 12, 15,52);
+			this.runGenerator(this.Pink_diamond, world, random, chunkX, chunkZ, 10, 15, 50);
+			this.runGenerator(this.Purple_diamond, world, random, chunkX, chunkZ, 8, 15, 46);
+			this.runGenerator(this.Red_diamond, world, random, chunkX, chunkZ, 6, 15, 44);
+			this.runGenerator(this.White_diamond, world, random, chunkX, chunkZ, 4, 15, 42);
+			this.runGenerator(this.Yellow_diamond, world, random, chunkX, chunkZ, 2, 15, 40);
+			/*
+			 * addOre(mods.roborave.edm.init.Blocks.getBlock("Yellow_diamond_Ore"), Blocks.stone, random, world, chunkX, chunkZ, 15, 42, 5, 7,2);
+			 */
 			break;
 		case -1: // Nether
 
 			break;
 		case 1: // End
-			this.runGenerator(this.gen_cobblestone, world, random, chunkX, chunkZ, 10, 0, 80);
+			//this.runGenerator(this.gen_cobblestone, world, random, chunkX, chunkZ, 10, 0, 80);
 			break;
 		}
 	}

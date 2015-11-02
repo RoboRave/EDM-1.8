@@ -23,6 +23,8 @@ public class Ability {
 		ability=player;
 	}
 
+	
+
 	public Object getAbility() 
 	{
 		return Ability.ability;
