@@ -6,11 +6,11 @@ This mod adds a variety of diamonds to Minecraft, each with different abilities
 
 [Minecraft Forums page](http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1292424-1-7-10-forge-extra-diamond-mod)
 
-[Compiling EDM](#compiling-Extra-Diamonds-Mod) - For those that want the latest unreleased features.
+[Compiling EDM](#compiling-extra-diamonds-mod) - For those that want the latest unreleased features.
 
 [Contributing](#contributing) - For those that want to help out.
 
-###Compiling-Extra-Diamonds-Mod
+###compiling-Extra-Diamonds-Mod
 IMPORTANT: Please report any issues you have, there might be some problems with the documentation!
 Also make sure you know EXACTLY what you're doing!  It's not any of our faults if your OS crashes, becomes corrupted, etc.
 ***
@@ -20,7 +20,7 @@ Also make sure you know EXACTLY what you're doing!  It's not any of our faults i
 
 [Setup Git](#setup-git)
 
-[Setup EDM](#setup-EDM)
+[Setup EDM](#setup-edm)
 
 [Compile EDM](#compile)
 
@@ -70,7 +70,7 @@ Git is used to clone EDM and update your local copy.
 1. Download and install Git [here](http://git-scm.com/download/).
 	* *Optional*: Download and install a Git GUI client, such as Github for Windows/Mac, SmartGitHg, TortoiseGit, etc.  A nice list is available [here](http://git-scm.com/downloads/guis).
 
-####Setup-EDM
+####Setup EDM
 This section assumes that you're using the command-line version of Git.
 
 1. Open up your command line.
@@ -112,7 +112,7 @@ So you found a bug in Roborave's code?  Think you can make it more efficient?  W
 3. Make the changes that you want to and commit them.
 	* If you're making changes locally, you'll have to execute `git commit -a` and `git push` in your command line.
 4. Click `Pull Request` at the right-hand side of the gray bar directly below your fork's name.
-5. Click `Click to create a pull request for this comparison`, enter your PR's title, and create a detailed description telling roborave what you changed.
+5. Click `Click to create a pull request for this comparison`, enter your PR's title, and create a detailed description telling RoboRave what you changed.
 6. Click `Send pull request`, and wait for feedback!
 
 ####Creating an Issue

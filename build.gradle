@@ -15,12 +15,12 @@ apply plugin: 'forge'
 
 targetCompatibility = JavaVersion.VERSION_1_8
 
-version = "5.1.0"
+version = "5.1.2"
 group= "mods.roborave.edm" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "[5.1.0]EDM-Universal"
+archivesBaseName = "[1.8]EDM-Universal"
 
 minecraft {
-    version = "1.8-11.14.1.1334"
+    version = "1.8-11.14.3.1450"
     runDir = "eclipse"
     
     // the mappings can be changed at any time, and must be in the following format.
@@ -33,7 +33,7 @@ minecraft {
 curse {
 	apiKey = '72b8071d-0dc8-4571-a662-52d227a3fd67'
     projectId = '59689'
-    changelog = '+added worldgen'
+    changelog = '+updated forge version'
 	// A file can also be set using: changelog = file('changelog.txt')
     releaseType = "release"
 	addGameVersion '1.8'
